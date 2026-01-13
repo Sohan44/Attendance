@@ -1,36 +1,48 @@
+# Face-Based Attendance Management System using Python & OpenCV
 
-# Face based attendance system using python and openCV
+## Project Overview
+This project is an enhanced Face-Based Attendance Management System developed using Python and OpenCV.
+It performs face recognition for attendance marking and also includes advanced attendance management features.
 
-[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)                 
-[![Python 3.9](https://img.shields.io/badge/python-3.9-blue.svg)](https://www.python.org/downloads/release/python-390/) 
+This repository is a modified and extended version of an open-source project.
+Significant improvements have been made to support real-world academic attendance requirements.
 
-### What steps you have to follow??
-- Download or clone my Repository to your device
-- type `pip install -r requirements.txt` in command prompt(this will install required package for project)
-- Create a `TrainingImage` folder in a project folder.
-- open `attendance.py` and `automaticAttendance.py`, change all the path accoriding to your system
-- Run `attandance.py` file
+Enhanced and maintained by: Sohan Bele
 
-### Project flow & explaination
-- After you run the project you have to register your face so that system can identify you, so click on register new student
-- After you click a small window will pop up in that you have to enter you ID and name and then click on `Take Image` button
-- After clicking `Take Image` button A camera window will pop up and it will detect your Face and take upto 50 Images(you can change the number of Image it can take) and stored in the folder named `TrainingImage`. more you give the image to system, the better it will perform while recognising the face.
-- Then you have to click on `Train Image` button, It will train the model and convert all the Image into numeric format so that computer can understand. we are training the image so that next time when we will show the same face to the computer it will easily identify the face.
-- It will take some time(depends on you system).
-- After training model click on `Automatic Attendance` ,you have to enter the subject name and then it can fill attendace by your face using our trained model.
-- it will create `.csv` file for every subject you enter and seperate every `.csv` file accoriding the subject
-- You can view the attendance after clicking `View Attendance` button. It will show record in tabular format.
+## Key Enhancements
+- Subject-wise attendance tracking
+- Fixed weekend holidays (Saturday and Sunday)
+- Option to manually mark holidays
+- Option to remove marked holidays
+- Monthly attendance percentage calculation
+- Improved attendance structure and logic
 
-### Screenshots
+## Technologies Used
+- Python
+- OpenCV
+- NumPy
+- CSV File Handling
 
-### Simple UI
-<img src='https://github.com/Patelrahul4884/Attendance-Management-system-using-face-recognition/blob/master/Project%20Snap/1.PNG'>
+## How to Run the Project
+1. Download or clone this repository.
+2. Open the project in PyCharm or any Python IDE.
+3. Install required dependencies using:
+   pip install -r requirements.txt
+4. Create a folder named TrainingImage inside the project directory.
+5. Open attendance.py and automaticAttendance.py and update file paths according to your system.
+6. Run the attendance.py file.
 
-### While taking Image
-![Screenshot (103)](https://user-images.githubusercontent.com/26384517/86820502-c7f44500-c0a6-11ea-9530-6317ec2059d9.png)
+## Project Workflow
+1. Register a student by capturing facial images.
+2. Train the model automatically.
+3. Mark attendance using face recognition.
+4. Manage subject-wise attendance.
+5. Mark or remove holidays.
+6. Generate monthly attendance percentage reports.
 
-## While taking Attendance
-![Screenshot (91)](https://user-images.githubusercontent.com/26384517/86821090-9465ea80-c0a7-11ea-9680-777923663d0c.png)
+## Notes
+- Saturday and Sunday are treated as default holidays.
+- Proper lighting is recommended while capturing facial images.
 
-## Attendance in tabular format 
-<img src='https://github.com/Patelrahul4884/Attendance-Management-system-using-face-recognition/blob/master/Project%20Snap/7.PNG'>
+## License
+This project is based on an open-source implementation and is intended for educational purposes.
